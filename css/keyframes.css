@@ -1,0 +1,365 @@
+@keyframes water{
+    0%{
+    	transform: translate(0,-20px);
+    	opacity: 0;
+    }
+    10%{
+    	opacity: 1;
+    }
+    90%{
+		transform: translate(0,30px);
+    	opacity: 1;
+    }
+    100%{
+		transform: translate(0,40px);
+    	opacity: 0;
+    }
+}
+
+@keyframes wheel{
+	from{
+		background-position: right;
+	}
+	to{
+		background-position: left;
+	}
+}
+
+@keyframes cloud1{
+	0%{
+		transform: translate(0);
+		opacity: 1;
+	}
+	50%{
+		transform: translate(20px);
+		opacity: 0.7;
+	}
+	100%{
+		transform: translate(0);
+		opacity: 1;
+	}
+}
+
+@keyframes cloud2{
+	0%{
+		transform: translate(0);
+	}
+	50%{
+		transform: translate(25px);
+	}
+	100%{
+		transform: translate(0);
+	}
+}
+@keyframes cloud3{
+	0%{
+		transform: translate(0);
+	}
+	50%{
+		transform: translate(-25px);
+	}
+	100%{
+		transform: translate(0);
+	}
+}
+
+@keyframes fan{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes music1{
+	0%{
+		background: url('../images/p3-2.png');
+	}
+	100%{
+		background: url('../images/p3-1.png');
+	}
+}
+@keyframes heart{
+	0%{
+		transform: scale(0.8);
+	}
+	50%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(0.8);
+	}
+}
+@keyframes plane{
+	0%{
+		transform: translate(0);
+		opacity: 0;
+	}
+	35%{
+		opacity: 0;
+	}
+	40%{
+		transform: translate(0);
+		opacity: 1;
+	}
+	50%{
+		opacity: 1;
+	}
+	90%{
+		opacity: 0;
+	}
+	100%{		
+		transform: translate(300px);
+		opacity: 0;
+	}
+}
+@keyframes ball{
+	0%{
+		transform: translate(0,0);
+		opacity: 0;
+	}
+	5%{
+		transform: translate(0,0);
+		opacity: 1;
+	}
+	10%{
+		transform: translate(0,-27px);
+	}
+	20%{
+		transform: translate(71px,-27px);
+	}
+	30%{
+		transform:translate(71px,0);
+	}
+	40%{
+		transform: translate(71px,0);
+	}
+	50%{
+		transform: translate(71px ,30px);
+	}
+	100%{
+		transform: translate(71px ,30px);
+	}
+}
+@keyframes water1{
+	0%{
+		transform: translate(0,0);
+		opacity: 0;
+	}
+	24%{
+		transform: translate(0,0);
+		opacity: 0;
+	}
+	26%{
+		transform: translate(0,0);
+		opacity: 1;
+		background: url('../images/p1-4.png') no-repeat center;		
+	}
+	39%{
+		transform: translate(0,30px);
+		background: url('../images/p1-10.png') no-repeat center;
+	}
+	40%{
+		transform: translate(0,30px);
+		background: url('../images/p1-10.png') no-repeat center;
+	}
+	50%{
+		transform: translate(0 ,60px);
+		background: url('../images/p1-10.png') no-repeat center;
+	}
+	100%{
+		transform: translate(0 ,60px);
+	}
+}
+@keyframes jump{
+	0%{
+		background-position: left;
+	}
+	25%{
+		background-position: center;
+	}
+	50%{
+		background-position: right;
+	}
+	75%{
+		background-position: center;
+	}
+	100%{
+		background-position: left;
+	}	
+}
+
+@keyframes jump-box{
+	0%{
+		transform: translate(0);
+		opacity: 0;
+	}
+	49%{
+		transform: translate(0);
+		opacity: 0;
+	}
+	50%{
+		transform: translate(0);
+		opacity: 1;
+	}
+	90%{
+		transform: translate(95px);
+		opacity: 1;
+	}
+	91%{
+		transform: translate(95px);
+		opacity: 0;
+	}
+	100%{
+		transform: translate(95px);
+		opacity: 0;
+	}
+}
+@keyframes fadeInUpBig{
+	from{
+		transform: translate(0,1000px);
+	}
+	to{
+		transform: translate(0,0);
+	}
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	95%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+ @keyframes fadeInText{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+} 
+@keyframes fadeLeft{
+	0%{
+		transform: translate(-1000px);
+	}
+	50%{
+		transform: translate(-1000px);
+	}
+	100%{
+		transform: translate(0);
+	}
+}
+@keyframes fadeLeftLine{
+	0%{
+		width: 0;
+	}
+	100%{
+		width:100%;
+	}
+}
+@keyframes rollLeft{
+	from{
+		transform: translate(-80px) rotate(-90deg);
+	}
+	to{
+		transform: translate(0) rotate(0deg);
+	}
+}
+@keyframes fadeRight{
+	0%{
+		transform: translate(1000px);
+	}
+	50%{
+		transform: translate(1000px);
+	}
+	100%{
+		transform: translate(0);
+	}
+}
+@keyframes rollRight{
+	from{
+		transform: translate(80px) rotate(90deg);
+	}
+	to{
+		transform: translate(0) rotate(0deg);
+	}
+}
+
+.p-1-water{
+	animation:water 3s infinite ease-in both;
+}
+.p-2-wheel{
+	animation:wheel 5s infinite linear;
+}  
+.p-3-cloud{
+	animation:cloud1 4s linear infinite;
+}
+.p-4-cloud{
+	animation:cloud2 6s linear infinite both;
+}
+.p-5-cloud{
+	animation:cloud3 6s linear infinite both;
+}
+.p-fan{
+	animation:fan 2s linear infinite;
+}
+.p-music1{
+	animation:music1 2s 1s infinite alternate ease-in-out both;	/*alternate：关键*/
+} 
+.p-heart{
+	animation:heart 3s infinite;
+}
+.p-plane{
+	animation:plane 8s infinite;
+}
+ .p-7-ball{
+	animation:ball 10s infinite;
+} 
+.p-8-water{
+	animation:water1 10s infinite;
+}
+.p-9-jump{
+	animation:jump 1s step-start infinite;
+}
+.p-9-jump-box{
+	animation:jump-box 10s both linear infinite;
+}
+.fadeInUpBig{
+	animation: fadeInUpBig 1.5s ease-out both;
+}
+.fadeInOne{
+	animation:fadeIn 5.5s linear;
+}
+.fadeInTwo{
+	animation:fadeIn 6s linear;
+}
+.fadeInThree{
+	animation:fadeIn 6.5s linear;
+}
+
+.fadeIn{
+	animation:fadeInText 1.5s linear;
+} 
+.fadeLeft{
+	animation:fadeLeft 2s ease-out;
+}
+.fadeLeftLine{
+	animation:fadeLeftLine 1s ease-out;
+}
+.rollLeft{
+	animation:rollLeft 1s linear;
+}
+.fadeRight{
+	animation:fadeRight 2s ease-out;
+}
+.rollRight{
+	animation:rollRight 1s linear;
+}
